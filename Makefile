@@ -6,7 +6,7 @@ all:
 	echo "usage: make deploy PROJECTID='<gcp project id>'"
 
 setproject:
-	gcloud config set project $(PROJECTID) --set-as-default
+	gcloud config set project $(PROJECTID)
 
 services:
 	gcloud services enable cloudbuild.googleapis.com
