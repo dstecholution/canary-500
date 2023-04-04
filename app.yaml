@@ -1,2 +1,6 @@
 runtime: python39
 service: canary-test
+
+handlers:
+    - url: /.*
+      script: auto
