@@ -2,5 +2,9 @@ runtime: python39
 service: canary-test
 
 handlers:
+
+    - url: /static
+      static_dir: static
+
     - url: /.*
       script: auto
